@@ -239,7 +239,7 @@ wine %&gt;%
 ##      sd   iqr
 ##   &lt;dbl&gt; &lt;dbl&gt;
 ## 1 0.886     1</code></pre>
-<p>The standard deviation .8856 which means that 5.8 + .88 is one standard deviation above the mean and 5.8 - .88 is one standard deviation below the mean. Therefore, 95 percent of the data is between 6.68 and 4.92.</p>
+<p>The standard deviation .8856 which means that 5.8 + .88 is one standard deviation above the mean and 5.8 - .88 is one standard deviation below the mean. Therefore, 95 percent of the data is between 6.68 and 4.92. This shows that a lot of the wine is close to being or is “good” wine. And if the cut off for good wine was changed to be 5, then almost all the wines would be classifyied as good. But 6 as a cut off is good becuase it is the median and is close to the mean becuase you want to know what qualifies as good and if they are all good then it hard to tell what sets a wine apart.</p>
 </div>
 <div id="visualization" class="section level4">
 <h4>Visualization</h4>
@@ -553,7 +553,9 @@ summary(grm)</code></pre>
 </div>
 <div id="conclusion" class="section level2">
 <h2>Conclusion</h2>
-<p>Overall, we can see that it is very hard to predict how someone will rate each wine because it is based on individual taste preferences.</p>
+<p>Overall, we can see that it is very hard to predict how someone will rate each wine because it is based on individual taste preferences. However, we can see that there were consistant predictors that were significant in each model in predicting the response. This can show us that these variables are important to the quality of the wine and should be paid more attention to. For example, we can see in the reduced linear regression model without interactions that increasing the level of alcohol makes the quality of wine increase.</p>
+<p>Businesses could plug in their characteristics of the wine and try to predict what an expert would rate their wine. While the models might not predict the data all that well, they could gain some idea as to how their wine compares to other wines with similar characteristics.</p>
+<p>By conducting data exploration, we learned valuable information about how the data interacts with itself. We can see how the response is distrubited and what variables might be related to each other. After learning this information, it is easier to try and fit a model becuse there is a better understanding of the data.</p>
 </div>
 
 
